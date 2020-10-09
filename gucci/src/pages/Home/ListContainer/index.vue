@@ -17,7 +17,6 @@
                   <a href="###">点击购买</a>
                 </div>
               </div>
-      
             </div>
             <div class="swiper-slide">
               <img src="./images/banner-02.jpg" alt="" />
@@ -32,9 +31,7 @@
                   <a href="###">男士系列</a>
                 </div>
               </div>
-
             </div>
-
           </div>
           <!-- 如果需要分页器 -->
           <div class="swiper-pagination"></div>
@@ -43,12 +40,11 @@
           <div class="swiper-button-next"></div>
 
           <div class="spice-flex-label">
-						<a class="e-free-distribution">
-			            	免费标准配送<i class="svg-iconfont " style="color:#fff">></i>
-			            </a>
-					</div>
+            <a class="e-free-distribution">
+              免费标准配送<i class="svg-iconfont " style="color:#fff">></i>
+            </a>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -62,7 +58,7 @@ export default {
 
   mounted() {
     new Swiper(this.$refs.banner, {
-      effect : 'fade',
+      effect: "fade",
       loop: true, // 循环模式选项
 
       autoplay: true, // 自动播放时间
@@ -96,19 +92,19 @@ export default {
 
 .swiper-container .spice-flex-label {
   position: absolute;
-    bottom: 0;
-    right: 55px;
-    z-index: 2;
-    text-align: center;
-    margin: auto;
-    a {
+  bottom: 0;
+  right: 55px;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+  a {
     font-size: 14px;
     color: #fff;
     letter-spacing: 0;
     line-height: 14px;
     display: inline-block;
     margin-bottom: 15px;
-}
+  }
 }
 /* 自定义按钮样式 */
 .swiper-button-prev {
@@ -160,4 +156,8 @@ export default {
   line-height: 40px;
   vertical-align: middle;
 }
+.solt-content .btn-group a:hover{
+    background: #313131;
+  }
+
 </style>

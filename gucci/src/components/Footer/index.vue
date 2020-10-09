@@ -15,13 +15,13 @@
               <ul class="spice-block-xs">
                 <li>
                   <a>
-                    <i class="svg-iconfont icon-svg-saturday-delivery"></i>
+                    <i class="iconfont icon-weibo"></i>
                     <span>免费标准配送</span>
                   </a>
                 </li>
                 <li>
                   <a>
-                    <i class="svg-iconfont icon-svg-gift"></i>
+                    <i class="iconfont icon-lipin"></i>
                     <span>免费礼品包装</span>
                   </a>
                 </li>
@@ -111,43 +111,43 @@
               <ul>
                 <li>
                   <a target="_blank" rel="nofollow" href="javascript:;">
-                    <i class="svg-iconfont icon-svg-wechat"></i>
+                    <i class="iconfont icon-weixin"></i>
                     <span>微信</span>
                   </a>
                 </li>
                 <li>
                   <a href="javascript:;" target="_blank" rel="nofollow">
-                    <i class="svg-iconfont icon-svg-weibo"></i>
+                    <i class="iconfont icon-weibo"></i>
                     <span>微博</span>
                   </a>
                 </li>
                 <li>
                   <a href="javascript:;">
-                    <i class="svg-iconfont icon-svg-douyin"></i>
+                    <i class="iconfont icon-tubiaozhizuomoban"></i>
                     <span>抖音</span>
                   </a>
                 </li>
                 <li>
                   <a href="javascript:;">
-                    <i class="spice-icon icon-tencent-img"></i>
+                    <i class="iconfont icon-tengxunshipin1"></i>
                     <span>腾讯视频</span>
                   </a>
                 </li>
                 <li>
                   <a href="javascript:;">
-                    <i class="svg-iconfont icon-red-book"></i>
+                    <i class="iconfont icon-xiaohongshu"></i>
                     <span>小红书</span>
                   </a>
                 </li>
                 <li class="spice-footer-tails spice-none-xs e-slide-item">
                   <a href="javascript:;" class="live800Btn">
-                    <i class="svg-iconfont icon-svg-chat"></i>
+                    <i class="iconfont icon-duihua"></i>
                     <span>在线顾问</span>
                   </a>
                 </li>
                 <li class="spice-footer-tails spice-none-xs">
                   <a href="javascript:;">
-                    <i class="svg-iconfont icon-svg-phone"></i>
+                    <i class="iconfont icon-dianhua"></i>
                     <span>400.8210.582</span>
                   </a>
                 </li>
@@ -442,10 +442,26 @@ export default {
               color: #e5dfd9;
               font-family: FuturaLT-Book, GucciChinese;
               position: relative;
+              .icon-tengxunshipin1 {
+                  font-size: 12px;
+                }
+                .iconfont{
+                  padding-right: 5px;
+                  color: rgba(255, 255, 255, 0.3);
+                  position: relative;
+                  top: 1px;
+                }
+                .icon-xiaohongshu {
+                  font-size: 35px;
+                  top: 8px;
+                }
               span {
                 display: inline-block;
               }
             }
+            a:hover .iconfont {
+                  color: #e5dfd9;
+                }
           }
         }
       }
