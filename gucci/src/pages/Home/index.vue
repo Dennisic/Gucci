@@ -179,6 +179,10 @@
 
     <!-- video 模块 -->
     <div class="spice-brand-panel-slot is-loop">
+      <div class="video">
+        <!-- video 属性  loop:循环播放 autoplay:自动播放 -->
+        <video autoplay="autoplay" loop="loop"  muted="" src="./video/urg6uNm5gO-20.mp4" ></video>      
+      </div>
       <picture>
         <img
           src="./images/16003084253804656_content_HomepageVideoBackgroundStandard_2600x1516_1596113103_HomepageVideoBackgrou.jpg"
@@ -293,7 +297,7 @@
                   </div>
               </div>
               </div>  
-              <div class="shop-this">
+              <div class="shop-this last-shop" >
                 <a href="javascript:;" class="spice-btn-golden">欣赏更多故事</a>
               </div>
             </div>
@@ -391,7 +395,7 @@ export default {
   z-index: 18;
 }
 
-.shop-this:before {
+.shop-this::before {
   /* background-image: url(./images/1600768995284658.jpg); */
   /* background-color: pink; */
   display: inline-block;
@@ -584,6 +588,16 @@ export default {
     height: auto;
     position: relative;
   }
+  .video{
+    width: 100%!important;;
+    height: 100%!important;; //尺寸保持原视频大小
+    video {
+      position: relative;
+      top:-180px;
+      width: 100%;
+      height: 100%;
+    }
+}
   .homepage-video-copy {
     z-index: 30;
     width: 160px;

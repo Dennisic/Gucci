@@ -109,11 +109,14 @@
                 <i class="svg-iconfont svg-plus-sub"></i>
               </div>
               <ul>
-                <li>
+                <li class="weixin">
                   <a target="_blank" rel="nofollow" href="javascript:;">
                     <i class="iconfont icon-weixin"></i>
                     <span>微信</span>
                   </a>
+                  <div class="cn-qa-code">
+                    <img src="https://res.gucci.cn/images/common/code_pc.jpg" />
+                  </div>
                 </li>
                 <li>
                   <a href="javascript:;" target="_blank" rel="nofollow">
@@ -430,6 +433,24 @@ export default {
           }
           ul li:first-child {
             position: relative;
+            .cn-qa-code {
+              width: 130px;
+              height: 130px;
+              padding: 10px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: none;
+              background: #fff;
+              img {
+              width: 130px;
+              height: 130px;
+              }
+            }
+          }
+          ul .weixin:hover .cn-qa-code {
+            display: block;
+            left: -157px;
           }
           ul li {
             margin-bottom: 13.4px;
@@ -443,25 +464,26 @@ export default {
               font-family: FuturaLT-Book, GucciChinese;
               position: relative;
               .icon-tengxunshipin1 {
-                  font-size: 12px;
-                }
-                .iconfont{
-                  padding-right: 5px;
-                  color: rgba(255, 255, 255, 0.3);
-                  position: relative;
-                  top: 1px;
-                }
-                .icon-xiaohongshu {
-                  font-size: 35px;
-                  top: 8px;
-                }
+                font-size: 12px;
+              }
+              .iconfont {
+                padding-right: 5px;
+                color: rgba(255, 255, 255, 0.3);
+                position: relative;
+                top: 1px;
+              }
+              .icon-xiaohongshu {
+                font-size: 35px;
+                top: 8px;
+              }
               span {
                 display: inline-block;
+                font-size: 11px;
               }
             }
             a:hover .iconfont {
-                  color: #e5dfd9;
-                }
+              color: #e5dfd9;
+            }
           }
         }
       }
