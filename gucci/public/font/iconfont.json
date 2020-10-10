@@ -1,0 +1,30 @@
+{
+  "id": "2012695",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1664366",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e730",
+      "unicode_decimal": 59184
+    },
+    {
+      "icon_id": "10561607",
+      "name": "Eye, blind",
+      "font_class": "Eyeblind",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "16793586",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

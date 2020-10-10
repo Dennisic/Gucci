@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.4.5",
     "vuex": "^3.5.1"
@@ -18,6 +21,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
@@ -40,5 +44,10 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "项目启动：npm run serve\r 配置别名在 jsconfig.json\r eslint 错误禁用在 vue.config.js\r 下载的在 package.json 中\r 注意：每个人写的页面以自己名字的字母简写作为后缀名",
+  "main": "babel.config.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }
