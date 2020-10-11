@@ -1,0 +1,79 @@
+{
+  "id": "1951994",
+  "name": "guli",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "781562",
+      "name": "三角上",
+      "font_class": "sanjiaotop",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "1898940",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "1278339",
+      "name": "sousuo",
+      "font_class": "sousuo",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "680963",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "3217890",
+      "name": "购物袋",
+      "font_class": "icon-",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "7684682",
+      "name": "address",
+      "font_class": "address",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "1190751",
+      "name": "down",
+      "font_class": "down1",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "6146040",
+      "name": "up",
+      "font_class": "up3",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "1207858",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "1207882",
+      "name": "up",
+      "font_class": "up",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    }
+  ]
+}

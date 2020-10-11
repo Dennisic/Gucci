@@ -1,0 +1,100 @@
+{
+  "id": "2120334",
+  "name": "gucci",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "356446",
+      "name": "减号",
+      "font_class": "jianhao2",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "9805767",
+      "name": "菱形",
+      "font_class": "lingxing",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "7434423",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "10232799",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e78d",
+      "unicode_decimal": 59277
+    },
+    {
+      "icon_id": "15546310",
+      "name": "减号",
+      "font_class": "jianhao1",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "4266144",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
+      "icon_id": "584241",
+      "name": "右箭头",
+      "font_class": "iconfonti",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "808010",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "1037687",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1166550",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1235221",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "3764019",
+      "name": "信息 ",
+      "font_class": "weibiaoti-",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "14112844",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}
