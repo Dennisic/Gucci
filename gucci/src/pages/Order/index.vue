@@ -96,7 +96,7 @@
         <span>支付方式</span>
       </div>
       <div class="rightContainer">
-        <ul class="ShopInfo">
+        <ul class="ShopInfo" v-for="attr in shopCartList" :key="attr.cartId">
           <li class="one" style="height:60px;line-height:80px;text-align:center;padding:20px;border-bottom:none">
             <div style="border-bottom:1px solid #eee">
               <span class="iconfont icon-bao"></span><span> 1</span>  件商品
@@ -105,23 +105,23 @@
           <li style="padding:20px;border-bottom:none">
             <div style="border-bottom:1px solid #eee;display:flex;">
               <div>
-              <img src="../../../public/images/X64.jpg" alt="">
+              <img :src="attr.imgUrl[1]" alt="" width="100px" height="100px">
               </div>
               <div class="bagInfos">
-                <span class="bagInfo" style="font-weight:700;color:black">Gucci 马衔扣1955系列小号手提包 </span>
+                <span class="bagInfo" style="font-weight:700;color:black">{{attr.name}}</span>
                 <span>数量：1</span>
                 <span style="font-weight:700;color:black">包</span>
                 <p><label>款号#</label> <span>621220 92TCG 8563</span></p>
                 <p><label>款式：</label> <span>高级人造帆布</span></p>
-                <p style="display:flex;justify-content:space-between"><label>有货</label> <span style="font-weight:700;color:black">￥19000</span></p>
+                <p style="display:flex;justify-content:space-between"><label>有货</label> <span style="font-weight:700;color:black">￥{{attr.price}}</span></p>
               </div>
             </div>
           </li>
           <li style="padding:0 20px;border-bottom:none;color:#999">
             <div style="height:100px;border-bottom:1px solid #eee;margin-bottom:10px;">
-              <p style="display:flex;justify-content:space-between"><span class="spuLeft">商品总计</span><span>￥19000</span></p>
+              <p style="display:flex;justify-content:space-between"><span class="spuLeft">商品总计</span><span>￥{{attr.price}}</span></p>
               <p style="display:flex;justify-content:space-between"><span>运费</span><span>免费</span></p>
-              <p style="display:flex;justify-content:space-between"><span>总计</span><span>￥19000</span></p>
+              <p style="display:flex;justify-content:space-between"><span>总计</span><span>￥{{attr.price}}</span></p>
             </div>
           </li>
           <li style="padding:0 20px;height:90px">
@@ -139,7 +139,7 @@
                 >销售条款</a
               >
               </p>
-              <button style="width:100%;height:40px;background:#e5dfd9;color:#999;border:none;">提交订单</button>
+              <button style="width:100%;height:40px;background:#000;color:#fff;border:none;" @click="toPayment">提交订单</button>
             </div>
           </li>
           <li style="padding:20px;color:#999">
@@ -163,8 +163,30 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "Order",
+  data() {
+    return {};
+  },
+  mounted() {
+    this.getShopCartList();
+  },
+  methods: {
+    getShopCartList() {
+      this.$store.dispatch("getShopCartList");
+    },
+    toPayment(){
+      this.$router.push('/payment')
+
+    }
+  },
+
+  computed: {
+    ...mapState({
+      shopCartList: (state) => state.cart.shopCartList,
+    }),
+  },
 };
 </script>
 
@@ -182,6 +204,7 @@ li {
   width: 100%;
   background-color: white;
 }
+
 .body .rightContainer {
   width: 345px;
   height: 950px;
@@ -216,7 +239,7 @@ li {
   padding-left: 28px;
   margin-bottom: 60px;
 }
-.bagInfos{
+.bagInfos {
   color: #999;
 }
 
@@ -263,11 +286,9 @@ li {
   margin-right: 50px;
 }
 
-.ShopInfo {
-}
 .ShopInfo li {
   border-bottom: 1px solid #eee;
   padding: 20px;
-  color:#999;
+  color: #999;
 }
 </style>
